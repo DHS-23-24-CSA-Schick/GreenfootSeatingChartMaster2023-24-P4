@@ -41,7 +41,7 @@ public class AbhishekParanthanate extends Student implements SpecialInterestOrHo
     public AbhishekParanthanate() {
         firstName="Abhishek";
         lastName="Paranthanate";
-        mySeatX=9;
+        mySeatX=8;
         mySeatY=10;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".png";

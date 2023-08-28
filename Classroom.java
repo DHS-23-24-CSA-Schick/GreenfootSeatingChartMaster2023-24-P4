@@ -153,7 +153,7 @@ public class Classroom extends World
         AbhishekParanthanate abhishekparanthanate = new AbhishekParanthanate();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
-        addObject(abhishekparanthanate, 9, 10);
+        addObject(abhishekparanthanate, 8, 10);
         abhishekparanthanate.assignSeat();
   
     }
