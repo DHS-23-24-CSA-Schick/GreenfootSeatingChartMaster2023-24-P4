@@ -9,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class IshaanGupta extends Student implements SpecialInterestOrHobby
 {
-    private int scaleStep = 7;
-    private int rotationStep = 2;
+
     /**
      * Constructor for the IshaanGupta class.
      * Constructors are special methods with the same exact name as the class name.  
@@ -42,7 +41,7 @@ public class IshaanGupta extends Student implements SpecialInterestOrHobby
     public IshaanGupta() {
         firstName="ishaan";
         lastName="gupta";
-        mySeatX=220;
+        mySeatX=-220;
         mySeatY=220;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
@@ -109,7 +108,7 @@ public class IshaanGupta extends Student implements SpecialInterestOrHobby
         world.setBackground("itemv3.jpeg"); 
         Greenfoot.delay(100);
         world.setBackground("ishaangupta-standing.jpg");
-        Greenfoot.delay(300);
+        Greenfoot.delay(1000);
         world.setBackground("csa.jpg");
         returnToSeat();
         }
