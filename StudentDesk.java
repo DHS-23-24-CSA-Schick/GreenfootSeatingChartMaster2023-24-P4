@@ -13,6 +13,8 @@ public class StudentDesk extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private int deskGroup;
+    private Student student;
+    
     public void act() 
     {
         // desks should not act.
@@ -25,4 +27,22 @@ public class StudentDesk extends Actor
         
            return deskGroup;
         }
+        
+    /**
+     * assignToDesk - Takes in a student as an argument, and sets the instance variable of "student" to the student that was assigned to the desk
+     */
+        
+    public void assignToDesk(Student s)
+    {
+        student = s;
+    }
+    
+    /**
+     * getStudent - Returns the student that is assigned at the desk
+     */
+    
+    public Student getStudent()
+    {
+        return student;
+    }
 }
