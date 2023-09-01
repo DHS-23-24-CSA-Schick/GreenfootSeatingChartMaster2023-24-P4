@@ -23,3 +23,9 @@
 hs_err_pid*
 
 *.iml
+
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.vscode/
