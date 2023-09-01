@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
+import java.util.List;
 /**
  * Write a description of class Student here.
  * 
@@ -11,6 +12,8 @@ public abstract class Student extends Actor
    //Instance variables
    public String firstName;
    public String lastName;
+   public StudentDesk myDesk;
+   
    public int mySeatX;         // rows start in the front of class (1), and end in the back of class
    public int mySeatY;        // seats are left to right, 1-8
    public boolean isActive;  // can you think of an algorithm that would allow you to use this
@@ -68,6 +71,13 @@ public abstract class Student extends Actor
     public void assignSeat(){
         mySeatX=getX();
         mySeatY=getY();
+        
+        List<StudentDesk> desks = getWorld().getObjectsAt(getX(), getY(), StudentDesk.class);
+        
+        for (StudentDesk desk : desks)
+        {
+            desk.assignToDesk(this);
+        }
     }
  
 }

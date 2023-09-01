@@ -29,6 +29,15 @@ public class StudentDesk extends Actor
         }
         
     /**
+     * assignToDesk - Sets the instance variable of "student" to null
+     */
+    
+    public void assignToDesk()
+    {
+        student = null;
+    }
+        
+    /**
      * assignToDesk - Takes in a student as an argument, and sets the instance variable of "student" to the student that was assigned to the desk
      */
         
