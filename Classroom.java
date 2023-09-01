@@ -156,6 +156,10 @@ public class Classroom extends World
         Bardia bardia = new Bardia();
         addObject(bardia, 2, 7);
         bardia.assignSeat();
+        
+        AbhishekParanthanate abhi = new AbhishekParanthanate();
+        addObject(abhi, 2,4);
+        abhi.assignSeat();
   
     }
     
