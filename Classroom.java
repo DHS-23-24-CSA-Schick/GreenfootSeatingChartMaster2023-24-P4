@@ -150,7 +150,10 @@ public class Classroom extends World
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
         KilgoreTrout kilgoretrout = new KilgoreTrout();
+        EvanTseng evantseng = new EvanTseng();
         addObject(kilgoretrout,2,3);
+        addObject(evantseng, 8,4);
+        evantseng.assignSeat();
         kilgoretrout.assignSeat();
   
     }
@@ -194,7 +197,7 @@ public class Classroom extends World
     
     // modified from https://beginnersbook.com/2014/01/how-to-append-to-a-file-in-java/
     
-
+    
    public  void appendFile(String fname, String s){
    {    
       try{
