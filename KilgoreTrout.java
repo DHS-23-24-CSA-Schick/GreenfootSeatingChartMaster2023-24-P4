@@ -41,7 +41,7 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
     public KilgoreTrout() {
         firstName="Kilgore";
         lastName="Trout";
-        mySeatX=10;
+        mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
