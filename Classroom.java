@@ -25,7 +25,7 @@ public class Classroom extends World
      * Constructor for objects of class Classroom.
      * 
      */
-    public Classroom()
+    public Classroom()                                                        
     {    
         // Create a new world with 10x6 cells with a cell size of 130x130 pixels.
         super(14, 14, 60); 
@@ -152,6 +152,12 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
+        
+        StudentDeskGroup sdg = new StudentDeskGroup();
+        this.addObject(sdg, 100,100);
+        sdg.assignSeatsToDeskGroups();
+        List<StudentDesk> desks = this.getObjects(StudentDesk.class);
+        sdg.getStudents(2, desks);
   
     }
     
