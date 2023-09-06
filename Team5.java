@@ -14,14 +14,10 @@ public class Team5 extends StudentDeskGroup
      */
     public void act()
     {
-        if(Greenfoot.isKeyDown("5")){
-            getCurrentStudents();
-        }
+        Greenfoot.delay(100);
+        System.out.println();
+        System.out.println("Table 5 has members Sai, Sathvik, Paige, and Harini!");
+        Greenfoot.delay(10000000);
     }
     
-    public void getCurrentStudents() {
-        
-        System.out.println("This table has members Sai, Sathvik, Paige, and Harini!");
-        
-    }
 }
