@@ -66,7 +66,7 @@ public class EvanTseng extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to play video games with my friends");
+                myHobby("I like to spend time with my friends");
                 numSiblings("I have 2 siblings. One younger brother and one younger sister");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
