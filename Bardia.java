@@ -6,6 +6,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
+
+//these are some changes
 public class Bardia extends Student implements SpecialInterestOrHobby
 {
     /**
