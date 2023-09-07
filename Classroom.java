@@ -155,6 +155,10 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
+        EvanTseng evantseng = new EvanTseng();
+        addObject(evantseng, 8,4);
+        evantseng.assignSeat();
+        
         
         IshaanGupta ishaangupta = new IshaanGupta();
         addObject(ishaangupta,9,10);
@@ -237,7 +241,7 @@ deekshavaidyanathan.assignSeat();
     
     // modified from https://beginnersbook.com/2014/01/how-to-append-to-a-file-in-java/
     
-
+    
    public  void appendFile(String fname, String s){
    {    
       try{
