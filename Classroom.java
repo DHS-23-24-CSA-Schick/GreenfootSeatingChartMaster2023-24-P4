@@ -156,6 +156,9 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
         
+        KaitoSuzuki kaitosuzuki = new KaitoSuzuki();
+        addObject(kaitosuzuki, 9, 6);
+        kaitosuzuki.assignSeat();
         HariniMurugan harinimurugan = new HariniMurugan();
         addObject(harinimurugan, 5, 10);
         harinimurugan.assignSeat();
