@@ -25,7 +25,7 @@ public class Classroom extends World
      * Constructor for objects of class Classroom.
      * 
      */
-    public Classroom()
+    public Classroom()                                                        
     {    
         // Create a new world with 10x6 cells with a cell size of 130x130 pixels.
         super(14, 14, 60); 
@@ -81,6 +81,7 @@ public class Classroom extends World
         StudentDesk studentdesk21 = new StudentDesk();
         addObject(studentdesk21,8,6);
         StudentDesk studentdesk22 = new StudentDesk();
+        
         addObject(studentdesk22,9,6);
         StudentDesk studentdesk23 = new StudentDesk();
         addObject(studentdesk23,8,7);
@@ -104,6 +105,7 @@ public class Classroom extends World
         addObject(studentdesk32,6,10);
         TeacherDesk teacherdesk = new TeacherDesk();
         addObject(teacherdesk,2,9);
+        
         studentdesk31.setDeskGroup(1);
         studentdesk29.setDeskGroup(1);
         studentdesk30.setDeskGroup(1);
@@ -156,7 +158,24 @@ public class Classroom extends World
         SanatGupta sanatgupta = new SanatGupta();
         addObject(sanatgupta, 5, 4);
         sanatgupta.assignSeat();
+        NithilaSadheesh nithilasadheesh = new NithilaSadheesh();
+        addObject(nithilasadheesh, 8, 9);
+        KevinLi kevinli = new KevinLi();
+        addObject(kevinli, 5, 7);
+        kevinli.assignSeat();
+        
+        SudithThota suditht = new SudithThota();
+        addObject(suditht, 8, 6);
+        suditht.assignSeat();
+        StudentDeskGroup sdg = new StudentDeskGroup();
+        this.addObject(sdg, 100,100);
+        sdg.assignSeatsToDeskGroups();
+        List<StudentDesk> desks = this.getObjects(StudentDesk.class);
+        sdg.getStudents(2, desks);
   
+DeekshaVaidyanathan deekshavaidyanathan = new DeekshaVaidyanathan();
+addObject(deekshavaidyanathan,9,4);
+deekshavaidyanathan.assignSeat();  
     }
     
     public List<Student> getAllStudents(){
