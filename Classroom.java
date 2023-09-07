@@ -81,6 +81,7 @@ public class Classroom extends World
         StudentDesk studentdesk21 = new StudentDesk();
         addObject(studentdesk21,8,6);
         StudentDesk studentdesk22 = new StudentDesk();
+        
         addObject(studentdesk22,9,6);
         StudentDesk studentdesk23 = new StudentDesk();
         addObject(studentdesk23,8,7);
@@ -104,6 +105,7 @@ public class Classroom extends World
         addObject(studentdesk32,6,10);
         TeacherDesk teacherdesk = new TeacherDesk();
         addObject(teacherdesk,2,9);
+        
         studentdesk31.setDeskGroup(1);
         studentdesk29.setDeskGroup(1);
         studentdesk30.setDeskGroup(1);
@@ -153,6 +155,9 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
         
+        SudithThota suditht = new SudithThota();
+        addObject(suditht, 8, 6);
+        suditht.assignSeat();
         StudentDeskGroup sdg = new StudentDeskGroup();
         this.addObject(sdg, 100,100);
         sdg.assignSeatsToDeskGroups();
