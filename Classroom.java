@@ -159,6 +159,9 @@ public class Classroom extends World
         List<StudentDesk> desks = this.getObjects(StudentDesk.class);
         sdg.getStudents(2, desks);
   
+DeekshaVaidyanathan deekshavaidyanathan = new DeekshaVaidyanathan();
+addObject(deekshavaidyanathan,9,4);
+deekshavaidyanathan.assignSeat();  
     }
     
     public List<Student> getAllStudents(){
