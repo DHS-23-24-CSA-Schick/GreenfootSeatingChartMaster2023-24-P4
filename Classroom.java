@@ -155,6 +155,9 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,3,4);
         kilgoretrout.assignSeat();
+        CyrilJoby cyriljoby = new CyrilJoby();
+        addObject(cyriljoby,5,3);
+        cyriljoby.assignSeat();
 
         JoshChoi joshchoi = new JoshChoi();
         addObject(joshchoi,2,4);
