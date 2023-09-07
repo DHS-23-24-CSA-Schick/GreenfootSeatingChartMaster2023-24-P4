@@ -155,7 +155,7 @@ public class Classroom extends World
         
         RyanKim ryankim = new RyanKim();
         addObject(ryankim,6,4);
-        kilgoretrout.assignSeat();
+        ryankim.assignSeat();
   
     }
     
