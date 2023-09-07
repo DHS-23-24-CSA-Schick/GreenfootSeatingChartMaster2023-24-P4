@@ -153,8 +153,11 @@ public class Classroom extends World
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
         KilgoreTrout kilgoretrout = new KilgoreTrout();
+        AbhishekParanthanate abhishekparanthanate = new AbhishekParanthanate();
         addObject(kilgoretrout,3,4);
         kilgoretrout.assignSeat();
+        addObject(abhishekparanthanate, 8, 10);
+        abhishekparanthanate.assignSeat();
         CyrilJoby cyriljoby = new CyrilJoby();
         addObject(cyriljoby,5,3);
         cyriljoby.assignSeat();
