@@ -155,9 +155,7 @@ public class Classroom extends World
         SakethBandi sakethbandi = new SakethBandi();
         addObject(sakethbandi,2,6);
         sakethbandi.assignSeat();
-        basketball ball = new basketball();
-        addObject(ball,2,5);
-        
+   
   
     }
     
