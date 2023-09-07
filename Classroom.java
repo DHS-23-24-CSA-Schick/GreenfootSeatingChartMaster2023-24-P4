@@ -104,6 +104,7 @@ public class Classroom extends World
         StudentDesk studentdesk32 = new StudentDesk();
         addObject(studentdesk32,6,10);
         TeacherDesk teacherdesk = new TeacherDesk();
+        addObject(teacherdesk,2,10);
         addObject(teacherdesk,2,9);
         
         studentdesk31.setDeskGroup(1);
@@ -155,6 +156,9 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
         
+        HariniMurugan harinimurugan = new HariniMurugan();
+        addObject(harinimurugan, 5, 10);
+        harinimurugan.assignSeat();
         AkshatKhandelwal akshatkhandelwal = new AkshatKhandelwal();
         addObject(akshatkhandelwal,6,3);
         akshatkhandelwal.assignSeat();
