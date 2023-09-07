@@ -105,8 +105,6 @@ public class Classroom extends World
         addObject(studentdesk32,6,10);
         TeacherDesk teacherdesk = new TeacherDesk();
         addObject(teacherdesk,2,10);
-        addObject(teacherdesk,2,9);
-        
         studentdesk31.setDeskGroup(1);
         studentdesk29.setDeskGroup(1);
         studentdesk30.setDeskGroup(1);
@@ -152,6 +150,8 @@ public class Classroom extends World
  // Each student needs to create their specific instance following the KilgoreTrout example.
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
+        KoushikAarnav aarnavkoushik = new KoushikAarnav();
+        addObject(aarnavkoushik,6,6);
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         AbhishekParanthanate abhishekparanthanate = new AbhishekParanthanate();
         addObject(kilgoretrout,3,4);
@@ -263,32 +263,32 @@ deekshavaidyanathan.assignSeat();
     
     
    public  void appendFile(String fname, String s){
-   {    
+   {	
       try{
-         
+    	 
         //Specify the file name and path here
-        File file =new File(fname);
+    	File file =new File(fname);
 
-        /* This logic is to create the file if the
-         * file is not already present
-         */
-        if(!file.exists()){
-           file.createNewFile();
-        }
+    	/* This logic is to create the file if the
+    	 * file is not already present
+    	 */
+    	if(!file.exists()){
+    	   file.createNewFile();
+    	}
 
-        //Here true is to append the content to file
-        FileWriter fw = new FileWriter(file,true);
-        //BufferedWriter writer give better performance
-        BufferedWriter bw = new BufferedWriter(fw);
-        bw.write(s);
-        //Closing BufferedWriter Stream
-        bw.close();
+    	//Here true is to append the content to file
+    	FileWriter fw = new FileWriter(file,true);
+    	//BufferedWriter writer give better performance
+    	BufferedWriter bw = new BufferedWriter(fw);
+    	bw.write(s);
+    	//Closing BufferedWriter Stream
+    	bw.close();
 
-    System.out.println("Data successfully appended at the end of file");
+	System.out.println("Data successfully appended at the end of file");
 
       }catch(IOException ioe){
          System.out.println("Exception occurred:");
-         ioe.printStackTrace();
+    	 ioe.printStackTrace();
        }
    }
 }
