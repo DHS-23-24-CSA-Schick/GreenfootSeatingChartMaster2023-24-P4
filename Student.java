@@ -70,6 +70,15 @@ public abstract class Student extends Actor
         mySeatX=getX();
         mySeatY=getY();
     }
+    public void setScale(int x, int y)
+    {
+        //Sets scale of your character (Be sure to call this after setting image)
+        //Units in pixels
+        GreenfootImage image = getImage();
+        image.scale(x, y);
+        setImage(image);
+    }
+ 
     public void tableSeven(){
         List<Student> s = ((Classroom) getWorld()).getAllStudents();
         ArrayList<Student> tableSevenStudents = new ArrayList<Student>();
