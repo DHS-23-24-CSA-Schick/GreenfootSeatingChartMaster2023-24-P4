@@ -148,6 +148,11 @@ public class Classroom extends World
  // Each student needs to create their specific instance following the PeytonLeonard example.
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
+
+        Bardia bardia = new Bardia();
+        addObject(bardia, 2, 7);
+        bardia.assignSeat();
+
         PeytonLeonard peytonLeonard = new PeytonLeonard();
         addObject(peytonLeonard,5,6);
         peytonLeonard.assignSeat();
