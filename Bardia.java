@@ -36,7 +36,7 @@ public class Bardia extends Student implements SpecialInterestOrHobby
         // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".mp3";
         setImage(portraitFile);
         sitting=true;
 
@@ -44,13 +44,62 @@ public class Bardia extends Student implements SpecialInterestOrHobby
     
     public void act()
     {
-        // Add your action code here.
+        if(Greenfoot.mouseClicked(this)){
+            //  if (sitting){
+            sitting=false;
+            setImage(standingFile);
+            System.out.println(""); // Print a blank line to create space between any student output.
+            getName();
+            sayName(soundFile);
+
+            myHobby("I love to play jazz!");
+            // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a
+            // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
+            // Call the sitDown() method to move back  to your seat
+
+            circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+
+            sitDown();
+        }
     }
-    
+
     public void getName(){
-        
+        System.out.println("My name is " + firstName + " " + lastName);
     }
-    
-    public void myHobby(String s){}
+
+    public void circleClass(){
+        setLocation(0,0);
+        Greenfoot.delay(10);
+        // move right
+        for (int i=1;i<=9;i++){
+            setLocation(i,0);
+            Greenfoot.delay(10);
+        }
+        // move back
+        for (int i=1;i<=5;i++){
+            setLocation(9,i);
+            Greenfoot.delay(10);
+        }
+        // move left
+        for (int i=9;i>=0;i--){
+            setLocation(i,5);
+            Greenfoot.delay(10);
+        }
+        // move Forward
+        for (int i=5;i>=0;i--){
+            setLocation(0,i);
+            Greenfoot.delay(10);
+        }
+        Greenfoot.delay(20);
+        returnToSeat();
+    }
+    /**
+     * myHobby is one of the interfaces provided.
+     * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
+     * tests on abstract classes and interfaces, but it is good to know about them
+     */
+    public void myHobby(String s) {
+        System.out.println(s);
+    }
 }
 
