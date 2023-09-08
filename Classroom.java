@@ -165,6 +165,10 @@ public class Classroom extends World
         AbhishekParanthanate abhishekparanthanate = new AbhishekParanthanate();
         addObject(kilgoretrout,3,4);
         kilgoretrout.assignSeat();
+          
+        MatthewLoo matthewloo = new MatthewLoo();
+        addObject(matthewloo,6,7);
+        matthewloo.assignSeat();
         
         ZuhairRassiwala zuhairrassiwala = new ZuhairRassiwala();
         addObject(zuhairrassiwala,9,9);
