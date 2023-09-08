@@ -156,6 +156,12 @@ public class Classroom extends World
         AbhishekParanthanate abhishekparanthanate = new AbhishekParanthanate();
         addObject(kilgoretrout,3,4);
         kilgoretrout.assignSeat();
+<<<<<<< HEAD
+        SakethBandi sakethbandi = new SakethBandi();
+        addObject(sakethbandi,2,6);
+        sakethbandi.assignSeat();
+   
+=======
         
         //adding sanjitha
         SanjithaSaravanan sanjithasaravanan = new SanjithaSaravanan();
@@ -224,6 +230,7 @@ public class Classroom extends World
         sdg.assignSeatsToDeskGroups();
         List<StudentDesk> desks = this.getObjects(StudentDesk.class);
         sdg.getStudents(2, desks);
+>>>>>>> master
   
         DeekshaVaidyanathan deekshavaidyanathan = new DeekshaVaidyanathan();
         addObject(deekshavaidyanathan,9,4);
