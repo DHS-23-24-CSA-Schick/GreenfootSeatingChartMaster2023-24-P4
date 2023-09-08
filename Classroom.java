@@ -150,11 +150,9 @@ public class Classroom extends World
  // Each student needs to create their specific instance following the PeytonLeonard example.
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
-<<<<<<< HEAD
         PeytonLeonard peytonLeonard = new PeytonLeonard();
         addObject(peytonLeonard,5,6);
         peytonLeonard.assignSeat();
-=======
         KoushikAarnav aarnavkoushik = new KoushikAarnav();
         addObject(aarnavkoushik,6,6);
         KilgoreTrout kilgoretrout = new KilgoreTrout();
@@ -229,7 +227,6 @@ public class Classroom extends World
         sdg.assignSeatsToDeskGroups();
         List<StudentDesk> desks = this.getObjects(StudentDesk.class);
         sdg.getStudents(2, desks);
->>>>>>> master
   
         DeekshaVaidyanathan deekshavaidyanathan = new DeekshaVaidyanathan();
         addObject(deekshavaidyanathan,9,4);
