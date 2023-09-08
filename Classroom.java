@@ -153,12 +153,19 @@ public class Classroom extends World
         PeytonLeonard peytonLeonard = new PeytonLeonard();
         addObject(peytonLeonard,5,6);
         peytonLeonard.assignSeat();
+        ArivDesai arivdesai = new ArivDesai();
+        addObject(arivdesai,2,3);
+        arivdesai.assignSeat();
         KoushikAarnav aarnavkoushik = new KoushikAarnav();
         addObject(aarnavkoushik,6,6);
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         AbhishekParanthanate abhishekparanthanate = new AbhishekParanthanate();
         addObject(kilgoretrout,3,4);
         kilgoretrout.assignSeat();
+        SakethBandi sakethbandi = new SakethBandi();
+        addObject(sakethbandi,2,6);
+        sakethbandi.assignSeat();
+   
         
         //adding sanjitha
         SanjithaSaravanan sanjithasaravanan = new SanjithaSaravanan();
