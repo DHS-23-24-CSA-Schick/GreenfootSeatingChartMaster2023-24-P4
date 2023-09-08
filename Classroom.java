@@ -8,10 +8,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-//import java.util.List;
-//import java.util.Arrays;
- // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
- 
+
 /**
  * Write a description of class Classroom here.
  * 
@@ -21,17 +18,18 @@ import java.io.FileNotFoundException;
 public class Classroom extends World
 {
     private ArrayList<Object> listo = new ArrayList<Object>();
+
     /**
      * Constructor for objects of class Classroom.
-     * 
      */
     public Classroom()                                                        
     {    
-        // Create a new world with 10x6 cells with a cell size of 130x130 pixels.
+        // Create a new world with 14x14 cells with a cell size of 60x60 pixels.
         super(14, 14, 60); 
 
         prepare();
     }
+
 
     /**
      * Prepare the classroom desk layout.  This method should not be chanaged!. Refactored from prepare method.
@@ -162,6 +160,12 @@ public class Classroom extends World
         AbhishekParanthanate abhishekparanthanate = new AbhishekParanthanate();
         addObject(kilgoretrout,3,4);
         kilgoretrout.assignSeat();
+        
+        RaghavanSrinivas raghavansrinivas = new RaghavanSrinivas();
+        addObject(raghavansrinivas, 9, 7);
+        raghavansrinivas.assignSeat();
+    
+        
         SakethBandi sakethbandi = new SakethBandi();
         addObject(sakethbandi,2,6);
         sakethbandi.assignSeat();
