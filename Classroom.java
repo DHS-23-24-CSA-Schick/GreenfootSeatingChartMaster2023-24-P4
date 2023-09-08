@@ -175,9 +175,9 @@ public class Classroom extends World
         joshchoi.assignSeat();
         JasonZhou jasonzhou = new JasonZhou();
         addObject(jasonzhou,9,10);
-        EvanTseng evantseng = new EvanTseng();
-        addObject(evantseng, 8,4);
-        evantseng.assignSeat();
+        // EvanTseng evantseng = new EvanTseng();
+        // addObject(evantseng, 8,4);
+        // evantseng.assignSeat();
         
         
         IshaanGupta ishaangupta = new IshaanGupta();
@@ -196,14 +196,21 @@ public class Classroom extends World
         PaigeNothelfer paigenothelfer = new PaigeNothelfer();
         addObject(paigenothelfer,6,10);
         paigenothelfer.assignSeat();
-        Team5 team5 = new Team5(); 
-        addObject(team5, 100, 100);
+        
+        // TODO - Debug StudentDeskGroup
+        //      - Bug: When added to the objects
+        //             StudentDeskGroup blocks all
+        //             other objects from receiving
+        //             mouse clicks.
+        // Team5 team5 = new Team5(); 
+        // addObject(team5, 100, 100);
         
         SanatGupta sanatgupta = new SanatGupta();
         addObject(sanatgupta, 5, 4);
         sanatgupta.assignSeat();
         NithilaSadheesh nithilasadheesh = new NithilaSadheesh();
         addObject(nithilasadheesh, 8, 9);
+        
         KevinLi kevinli = new KevinLi();
         addObject(kevinli, 5, 7);
         kevinli.assignSeat();
@@ -211,17 +218,19 @@ public class Classroom extends World
         SudithThota suditht = new SudithThota();
         addObject(suditht, 8, 6);
         suditht.assignSeat();
+        
         StudentDeskGroup sdg = new StudentDeskGroup();
         this.addObject(sdg, 100,100);
         sdg.assignSeatsToDeskGroups();
         List<StudentDesk> desks = this.getObjects(StudentDesk.class);
         sdg.getStudents(2, desks);
   
-DeekshaVaidyanathan deekshavaidyanathan = new DeekshaVaidyanathan();
-addObject(deekshavaidyanathan,9,4);
-deekshavaidyanathan.assignSeat();  
+        DeekshaVaidyanathan deekshavaidyanathan = new DeekshaVaidyanathan();
+        addObject(deekshavaidyanathan,9,4);
+        deekshavaidyanathan.assignSeat();  
     }
     
+
     public List<Student> getAllStudents(){
        List<Student> s = getObjects(Student.class);  
        return s;
@@ -263,32 +272,32 @@ deekshavaidyanathan.assignSeat();
     
     
    public  void appendFile(String fname, String s){
-   {	
+   {    
       try{
-    	 
+         
         //Specify the file name and path here
-    	File file =new File(fname);
+        File file =new File(fname);
 
-    	/* This logic is to create the file if the
-    	 * file is not already present
-    	 */
-    	if(!file.exists()){
-    	   file.createNewFile();
-    	}
+        /* This logic is to create the file if the
+         * file is not already present
+         */
+        if(!file.exists()){
+           file.createNewFile();
+        }
 
-    	//Here true is to append the content to file
-    	FileWriter fw = new FileWriter(file,true);
-    	//BufferedWriter writer give better performance
-    	BufferedWriter bw = new BufferedWriter(fw);
-    	bw.write(s);
-    	//Closing BufferedWriter Stream
-    	bw.close();
+        //Here true is to append the content to file
+        FileWriter fw = new FileWriter(file,true);
+        //BufferedWriter writer give better performance
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(s);
+        //Closing BufferedWriter Stream
+        bw.close();
 
-	System.out.println("Data successfully appended at the end of file");
+    System.out.println("Data successfully appended at the end of file");
 
       }catch(IOException ioe){
          System.out.println("Exception occurred:");
-    	 ioe.printStackTrace();
+         ioe.printStackTrace();
        }
    }
 }
