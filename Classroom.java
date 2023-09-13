@@ -256,7 +256,11 @@ public class Classroom extends World
   
         DeekshaVaidyanathan deekshavaidyanathan = new DeekshaVaidyanathan();
         addObject(deekshavaidyanathan,9,4);
-        deekshavaidyanathan.assignSeat();  
+        deekshavaidyanathan.assignSeat();
+        
+        SatvikMarthi satvikmarthi = new SatvikMarthi();
+        addObject(satvikmarthi,5,9);
+        satvikmarthi.assignSeat();
     }
     
 
