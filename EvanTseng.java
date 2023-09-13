@@ -65,13 +65,8 @@ public class EvanTseng extends Student implements SpecialInterestOrHobby
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
                 sayName(soundFile);
-            
-<<<<<<< HEAD
                 myHobby("I like to spend time with my friends");
                 numSiblings("I am the oldest of three siblings and I have a sister and a brother");
-=======
-                myHobby("I like to spend time with my friends!");
->>>>>>> master
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat

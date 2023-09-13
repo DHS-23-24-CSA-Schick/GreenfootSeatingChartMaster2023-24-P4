@@ -194,9 +194,9 @@ public class Classroom extends World
         joshchoi.assignSeat();
         JasonZhou jasonzhou = new JasonZhou();
         addObject(jasonzhou,9,10);
-        // EvanTseng evantseng = new EvanTseng();
-        // addObject(evantseng, 8,4);
-        // evantseng.assignSeat();
+        EvanTseng evantseng = new EvanTseng();
+        addObject(evantseng, 8,4);
+        evantseng.assignSeat();
         
         
         IshaanGupta ishaangupta = new IshaanGupta();
