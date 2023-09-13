@@ -66,7 +66,7 @@ public class EvanTseng extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
                 myHobby("I like to spend time with my friends");
-                numSiblings("I am the oldest of three siblings and I have a sister and a brother");
+                System.out.println("I am the oldest of three siblings and I have a sister and a brother");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
