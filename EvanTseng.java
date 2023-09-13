@@ -41,11 +41,11 @@ public class EvanTseng extends Student implements SpecialInterestOrHobby
     public EvanTseng() {
         firstName="Evan";
         lastName="Tseng";
-        mySeatX=1;
-        mySeatY=1;
-       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+        mySeatX=9;
+        mySeatY=3;
+        //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";    
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
@@ -66,13 +66,17 @@ public class EvanTseng extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
+<<<<<<< HEAD
                 myHobby("I like to spend time with my friends");
                 numSiblings("I am the oldest of three siblings and I have a sister and a brother");
+=======
+                myHobby("I like to spend time with my friends!");
+>>>>>>> master
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                writingInitial();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
             }
@@ -97,44 +101,30 @@ public class EvanTseng extends Student implements SpecialInterestOrHobby
      * This is a local method specific to the EvanTseng class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    public void writingInitial(){
-        setLocation(2,1);
-        Greenfoot.delay(10);
-        
-        for (int j=1; j<=4; j++) {
-                    // move right
-            for (int i=1;i<=12;i++){
-                //int speed = 10;
-                setLocation(i,1);
-                Greenfoot.delay(1);
-                //speed-= 2;
-            }
-            setLocation(2,1);
-            // move down
-            for (int i=1;i<=15;i++){
-                //int speed = 10;
-                setLocation(2,i);
-                Greenfoot.delay(1);
-                //speed-=2;
-            }      
-         // move right again
-            for (int i=1;i<=12;i++){
-                //int speed = 10;
-                setLocation(i,6);
-                Greenfoot.delay(1);
-                //speed -= 2;
-            }      
-            setLocation(2,11);
-              // move right for the third time and finish the E
-            for (int i=1;i<=12;i++){
-                //int speed = 10;
-                setLocation(i,11);
-                Greenfoot.delay(1);
-                
-            }
+    public void circleClass(){
+        setLocation(0,0);
+         Greenfoot.delay(10);
+        // move right
+        for (int i=1;i<=8;i++){
+            setLocation(i,0);
+            Greenfoot.delay(10);
         }
-   
-           Greenfoot.delay(2);
+        // move back
+        for (int i=1;i<=8;i++){
+            setLocation(9,i);
+            Greenfoot.delay(10);
+        }      
+         // move left
+        for (int i=15;i>=9;i--){
+            setLocation(i,5);
+            Greenfoot.delay(10);
+        }      
+              // move Forward
+        for (int i=17;i>=10;i--){
+            setLocation(0,i);
+            Greenfoot.delay(10);
+        }   
+           Greenfoot.delay(20);
            returnToSeat();
     }
      /**
@@ -144,10 +134,6 @@ public class EvanTseng extends Student implements SpecialInterestOrHobby
      */
      public void myHobby(String s) {
          System.out.println(s);
-}
-
-    public void numSiblings(String a) {
-        System.out.println(a);
 }
 
 }
