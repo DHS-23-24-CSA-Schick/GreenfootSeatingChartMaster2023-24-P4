@@ -160,15 +160,11 @@ public class Classroom extends World
         addObject(peytonLeonard,5,6);
         peytonLeonard.assignSeat();
         ArivDesai arivdesai = new ArivDesai();
-        addObject(arivdesai,2,3);
+        addObject(arivdesai,3,4);
         arivdesai.assignSeat();
         KoushikAarnav aarnavkoushik = new KoushikAarnav();
         addObject(aarnavkoushik,6,6);
-        KilgoreTrout kilgoretrout = new KilgoreTrout();
         AbhishekParanthanate abhishekparanthanate = new AbhishekParanthanate();
-        addObject(kilgoretrout,3,4);
-        kilgoretrout.assignSeat();
-          
         MatthewLoo matthewloo = new MatthewLoo();
         addObject(matthewloo,6,7);
         matthewloo.assignSeat();
@@ -213,7 +209,7 @@ public class Classroom extends World
         
         
         IshaanGupta ishaangupta = new IshaanGupta();
-        addObject(ishaangupta,9,10);
+        addObject(ishaangupta,2,3);
         ishaangupta.assignSeat();
         
         KaitoSuzuki kaitosuzuki = new KaitoSuzuki();
