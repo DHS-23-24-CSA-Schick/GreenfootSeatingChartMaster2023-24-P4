@@ -164,10 +164,7 @@ public class Classroom extends World
         arivdesai.assignSeat();
         KoushikAarnav aarnavkoushik = new KoushikAarnav();
         addObject(aarnavkoushik,6,6);
-        KilgoreTrout kilgoretrout = new KilgoreTrout();
         AbhishekParanthanate abhishekparanthanate = new AbhishekParanthanate();
-        addObject(kilgoretrout,3,4);
-        kilgoretrout.assignSeat();
           
         MatthewLoo matthewloo = new MatthewLoo();
         addObject(matthewloo,6,7);
