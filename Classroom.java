@@ -156,6 +156,10 @@ public class Classroom extends World
         addObject(bardia, 2, 7);
         bardia.assignSeat();
 
+        DhruvVootkuri dhruvVootkuri = new DhruvVootkuri();
+        addObject(dhruvVootkuri,8,3);
+        dhruvVootkuri.assignSeat();
+
         PeytonLeonard peytonLeonard = new PeytonLeonard();
         addObject(peytonLeonard,5,6);
         peytonLeonard.assignSeat();
